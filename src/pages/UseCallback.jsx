@@ -30,17 +30,17 @@ const UseCallback = () => {
   //   );
 
   return (
-    <div className="border-2 border-blue-500">
-      <div className="flex">
+    <div>
+      <div className="flex gap-x-2">
         <button
-          className="border bg-violet-200 px-2 py-1 rounded-md"
+          className="bg-violet-200 px-2 py-1 rounded-md"
           onClick={() => setUsers(shuffle(allUsers))}
         >
           shuffle
         </button>
         <SearchBar onChange={handleSearch} />
       </div>
-      <ul className="flex flex-col gap-y-2">
+      <ul className="pt-4">
         {users.map((user, index) => {
           return <li key={index}>{user}</li>;
         })}

@@ -5,7 +5,7 @@ const SearchBarComponent = ({ onChange }) => {
   console.log("searchbar rendered!");
   return (
     <input
-      className="border w-full border-black rounded-md"
+      className="border w-full border-gray-400 rounded-md"
       type="text"
       name="text"
       autoComplete="on"
