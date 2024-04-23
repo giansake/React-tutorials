@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { initialItems } from "../../utils/initialItems";
 
 const UseMemo = () => {
   const [count, setCount] = useState(0);
   const [items] = useState(initialItems);
 
-  const selectedItem = items.find((item) => item.isSelected);
+  const selectedItem = useMemo(
+    () => items.find((item) => item.isSelected),
+    [items]
+  );
 
   return (
     <div>
