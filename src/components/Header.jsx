@@ -7,9 +7,10 @@ const Header = () => {
         <Link to="/">Home</Link>
         <Link to="/use-state">UseState</Link>
         <Link to="/use-effect">UseEffect</Link>
-        <Link to="/use-memo">UseMemo</Link>
+        {/* <Link to="/use-memo">UseMemo</Link> */}
         <Link to="/use-callback">UseCallback</Link>
         <Link to="/staggering-animation">Staggering</Link>
+        <Link to="/more-staggering-animation">More staggering</Link>
       </div>
       <Outlet />
     </div>

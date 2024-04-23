@@ -12,8 +12,9 @@ import Header from "./components/Header";
 import UseState from "./pages/UseState";
 import UseCallback from "./pages/UseCallback";
 import UseEffect from "./pages/UseEffect";
-import UseMemo from "./pages/UseMemo";
+// import UseMemo from "./pages/UseMemo";
 import Staggering from "./pages/Staggering";
+import MoreStaggering from "./pages/MoreStaggering";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,10 +23,11 @@ const router = createBrowserRouter(
 
       <Route path="use-state" element={<UseState />} />
       <Route path="use-effect" element={<UseEffect />} />
-      <Route path="use-memo" element={<UseMemo />} />
+      {/* <Route path="use-memo" element={<UseMemo />} /> */}
       <Route path="use-callback" element={<UseCallback />} />
 
       <Route path="staggering-animation" element={<Staggering />} />
+      <Route path="more-staggering-animation" element={<MoreStaggering />} />
     </Route>
   )
 );
