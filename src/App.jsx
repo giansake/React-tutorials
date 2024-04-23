@@ -11,14 +11,17 @@ import Header from "./components/Header";
 
 import UseState from "./pages/UseState";
 import UseCallback from "./pages/UseCallback";
+import UseEffect from "./pages/UseEffect";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Header />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="use-callback" element={<UseCallback />} />
+
       <Route path="use-state" element={<UseState />} />
+      <Route path="use-effect" element={<UseEffect />} />
+      <Route path="use-callback" element={<UseCallback />} />
     </Route>
   )
 );
