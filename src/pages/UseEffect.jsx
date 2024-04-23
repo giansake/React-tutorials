@@ -5,9 +5,10 @@ const UseEffect = () => {
 
   useEffect(() => {
     //   the code we want to run
-    console.log(count);
+    console.log("The count is: ", count);
 
     return () => {
+      console.log("i am being cleaned up!");
       // optional clean up function
     };
   }, []); // dependency array
