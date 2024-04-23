@@ -8,6 +8,8 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Header from "./components/Header";
+
+import UseState from "./pages/UseState";
 import UseCallback from "./pages/UseCallback";
 
 const router = createBrowserRouter(
@@ -16,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="use-callback" element={<UseCallback />} />
+      <Route path="use-state" element={<UseState />} />
     </Route>
   )
 );
