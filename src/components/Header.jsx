@@ -6,6 +6,7 @@ const Header = () => {
       <div>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/use-callback">UseCallback</Link>
       </div>
       <Outlet />
     </div>
