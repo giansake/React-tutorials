@@ -9,6 +9,7 @@ const Header = () => {
 
         <Link to="/use-state">UseState</Link>
         <Link to="/use-effect">UseEffect</Link>
+        <Link to="/use-memo">UseMemo</Link>
         <Link to="/use-callback">UseCallback</Link>
       </div>
       <Outlet />
